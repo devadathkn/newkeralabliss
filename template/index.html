@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>KERALABLISS</title>
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{% static 'css/style-starter.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main_styles.css' %}">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body id="home">
+<section class=" w3l-header-4 header-sticky">
+	<!--header-->
+	<header id="site-header" class="fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark stroke">
+				<!-- <h1><a class="navbar-brand" href="index">
+					</span>FOCUZ
+				</a></h1> -->
+				<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item {{active1}}">
+                            <a class="nav-link" href="{% url 'index' %}">HOME<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item {{active2}}">
+                            <a class="nav-link" href="{% url 'packages' %}">PACKAGES</a>
+                        </li>
+                        <li class="nav-item {{active3}}">
+                            <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+                        </li>
+                       
+
+                    </ul>
+                </div>
+                <div class="d-lg-block d-none">
+                    <a href="{% url 'Login' %}" class="btn btn-style btn-secondary">LOGIN</a>
+                </div>
+		</div>
+	  </header>
+	<!--/header-->
+</section>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script> <!-- Common jquery plugin -->
+<!--bootstrap working-->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+{% block content %}
+<section class="w3l-main-slider" id="home">
+</section>
+
+
+
+<section class="w3l-covers-18 ">
+  <div class="covers-main editContent">
+          <div class="intro">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="intro_container">
+                    <div class="row">
+        
+                      <!-- Intro Item -->
+                      <div class="col-lg-4 intro_col">
+                        <div class="intro_item d-flex flex-row align-items-end justify-content-start">
+                          <div class="intro_icon"><img src="{% static 'images/keralogo.jpg' %}" alt=""></div>
+                          <div class="intro_content">
+                            <div class="intro_title">EXPLORE</div>
+                            
+                          </div>
+                        </div>
+                      </div>
+        
+                      <!-- Intro Item -->
+                      <div class="col-lg-4 intro_col">
+                        <div class="intro_item d-flex flex-row align-items-end justify-content-start">
+                          <div class="intro_icon"><img src="{% static 'images/dream.png' %}" alt=""></div>
+                          <div class="intro_content">
+                            <div class="intro_title">DREAM</div>
+                            
+                          </div>
+                        </div>
+                      </div>
+        
+                      <!-- Intro Item -->
+                      <div class="col-lg-4 intro_col">
+                        <div class="intro_item d-flex flex-row align-items-end justify-content-start">
+                          <div class="intro_icon"><img src="{% static 'images/disc.jpg' %}" alt=""></div>
+                          <div class="intro_content">
+                            <div class="intro_title">DISCOVERY</div>
+                            
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>		
+              </div>
+            </div>
+          </div>
+          <!-- stats -->
+  <section class="w3l-stats py-5" id="stats">
+    <div class="gallery-inner container py-lg-0 py-3">
+      <div class="row stats-con pb-lg-3">
+        <div class="col-lg-3 col-6 stats_info counter_grid">
+          <p class="counter">14</p>
+          <h4>DISTRICTS</h4>
+        </div>
+        <div class="col-lg-3 col-6 stats_info counter_grid1">
+          <p class="counter">70</p>
+          <h4>PLACES</h4>
+        </div>
+        <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-5">
+          <p class="counter">9</p>
+          <h4>FAMOUS PLACES</h4>
+        </div>
+        <div class="col-lg-3 col-6 stats_info counter_grid2 mt-lg-0 mt-5">
+          <p class="counter">1500</p>
+          <h4>HAPPY CUSTOMERS</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //stats -->
+        
+          <!-- Destinations -->
+        
+        
+        
+          <!-- Testimonials -->
+        
+        
+          <!-- News -->
+        
+                    <!-- News Post -->
+                    <div class="best-rooms py-5">
+                      <div class="container py-md-5">
+                      <h3>Check-in images from customers:</h3>
+                        <div class="ban-content-inf row">
+                          <div class="maghny-gd-1 col-lg-6">
+                            <div class="maghny-grid">
+                              <figure class="effect-lily border-radius  m-0">
+                                <img class="img-fluid" src="{% static 'images/kovi2.jpg' %}" alt="" />
+                                <figcaption>
+                                  <div>
+                                    <h4>3Days, 4 Nights</h4>
+                                    <p>FROM ₹5000 </p>
+                                  </div>
+                                </figcaption>
+                              </figure>
+                            </div>
+                          </div>
+                          <div class="maghny-gd-1 col-lg-6 mt-lg-0 mt-4">
+                            <div class="row">
+                              <div class="maghny-gd-1 col-6">
+                                <div class="maghny-grid">
+                                  <figure class="effect-lily border-radius">
+                                    <img class="img-fluid" src="{% static 'images/h.jpg' %}" alt="" />
+                                    <figcaption>
+                                      <div>
+                                        <h4>3Days, 4 Nights</h4>
+                                        <p>FROM ₹4000 </p>
+                                      </div>
+                  
+                                    </figcaption>
+                                  </figure>
+                                </div>
+                              </div>
+                              <div class="maghny-gd-1 col-6">
+                                <div class="maghny-grid">
+                                  <figure class="effect-lily border-radius">
+                                    <img class="img-fluid" src="{% static 'images/l.jpg' %}" alt="" />
+                                    <figcaption>
+                                      <div>
+                                        <h4>3Days, 4 Nights</h4>
+                                        <p>FROM ₹3000 </p>
+                                      </div>
+                  
+                                    </figcaption>
+                                  </figure>
+                                </div>
+                              </div>
+                              <div class="maghny-gd-1 col-6 mt-4">
+                                <div class="maghny-grid">
+                                  <figure class="effect-lily border-radius">
+                                    <img class="img-fluid" src="{% static 'images/m.jpg' %}" alt="" />
+                                    <figcaption>
+                                      <div>
+                                        <h4>3Days, 4 Nights</h4>
+                                        <p>FROM ₹2000 </p>
+                                      </div>
+                  
+                                    </figcaption>
+                                  </figure>
+                                </div>
+                              </div>
+                              <div class="maghny-gd-1 col-6 mt-4">
+                                <div class="maghny-grid">
+                                  <figure class="effect-lily border-radius">
+                                    <img class="img-fluid" src="{% static 'images/i.jpg' %}" alt="" />
+                                    <figcaption>
+                                      <div>
+                                        <h4>3Days, 4 Nights</h4>
+                                        <p>FROM ₹1500 </p>
+                                      </div>
+                  
+                                    </figcaption>
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+{% endblock %}
+
+<section class="w3l-footer-29-main">
+	<div class="footer-29 py-5 ">
+	  <div >
+		  <div class="grid-col-4 footer-top-29">
+			  <div class="footer-list-29 footer-1">
+				  <h2 class="footer-title-29">CONNECT WITH US</h2>
+  				<div class="testimonial">
+            <p><span>KERALABLISS,PULPALLY</span> © KERALABLISS 2022. All Rights Reserved.</p>
+            <p><h3>Follow Us</h3></p>
+            <a href="https://www.instagram.com/vivekps.__/"><img src="/static/images/insta.avif" alt="Avatar" style="width:100px">
+          </div>
+		  	</div>
+			  <div class="footer-list-29 footer-3"></div>
+  			<div class="footer-list-29 footer-3"></div>
+	  		<div class="footer-list-29 footer-3">
+			  </div>
+			</div>
+    </div>
+	</div>
+</section>
+
+
+</body>
+
+</html>
